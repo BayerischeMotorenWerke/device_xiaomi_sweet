@@ -110,7 +110,6 @@ void vendor_load_properties() {
         device = "sweet";
         fingerprint = "Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.8.0.SKFMIXM:user/release-keys";
         description = "sweet_global-user 12 SKQ1.210908.001 V13.0.8.0.SKFMIXM release-keys";
-        marketname = "Redmi Note 10 Pro";
         mod_device = "sweet_global";
     }
 
