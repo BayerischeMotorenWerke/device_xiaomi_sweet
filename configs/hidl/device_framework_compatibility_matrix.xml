@@ -25,7 +25,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<compatibility-matrix version="1.0" type="framework">
+<compatibility-matrix version="4.0" type="framework">
 <hal format="hidl">
     <name>android.hardware.ir</name>
     <version>1.0</version>
@@ -34,6 +34,34 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <instance>default</instance>
     </interface>
 </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifidisplaysession</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiDisplaySession</name>
+            <instance>wifidisplaysession</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionAudioTrack</name>
+            <instance>wifidisplaysessionaudiotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionImageTrack</name>
+            <instance>wifidisplaysessionimagetrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionVideoTrack</name>
+            <instance>wifidisplaysessionvideotrack</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 <hal format="hidl">
     <name>android.hardware.gnss</name>
     <version>1.0</version>
@@ -322,26 +350,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </interface>
 </hal>
 <hal format="hidl">
-    <name>vendor.qti.hardware.wifidisplaysession</name>
-    <version>1.0</version>
-    <interface>
-        <name>IWifiDisplaySession</name>
-        <instance>wifidisplaysession</instance>
-    </interface>
-    <interface>
-        <name>IWifiDisplaySessionAudioTrack</name>
-        <instance>wifidisplaysessionaudiotrack</instance>
-    </interface>
-    <interface>
-        <name>IWifiDisplaySessionImageTrack</name>
-        <instance>wifidisplaysessionimagetrack</instance>
-    </interface>
-    <interface>
-        <name>IWifiDisplaySessionVideoTrack</name>
-        <instance>wifidisplaysessionvideotrack</instance>
-    </interface>
-</hal>
-<hal format="hidl">
     <name>vendor.qti.ims.callinfo</name>
     <version>1.0</version>
     <interface>
@@ -365,4 +373,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <instance>imsrtpservice</instance>
     </interface>
 </hal>
+
 </compatibility-matrix>
