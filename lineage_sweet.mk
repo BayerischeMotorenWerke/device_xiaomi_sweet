@@ -9,6 +9,18 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Rom flags
+RICE_MAINTAINER := BayerischeMotorenWerke
+RICE_OFFICIAL := true
+RICE_DEVICE := sweet
+RICE_CHIPSET := SDM732G
+SUSHI_BOOTANIMATION  := 1080
+WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_sweet
 PRODUCT_DEVICE := sweet
