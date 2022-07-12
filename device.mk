@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlaySweet \
     DialerOverlaySweet \
     FrameworkResOverlaySweet \
+    SettingsOverlaySweet \
     SettingsProviderOverlaySweet \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet
@@ -173,6 +174,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    remove_packages
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
